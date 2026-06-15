@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sergio Ortuño Galvañ — Desarrollo de software y DevOps</title>
+<meta name="description" content="Sergio Ortuño Galvañ, desarrollador de software con interés en DevOps, cloud y backend. Proyectos, trayectoria y contacto." />
+<meta name="author" content="Sergio Ortuño Galvañ" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#f7f5f0" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sergio Ortuño Galvañ — Desarrollo de software y DevOps" />
+<meta property="og:description" content="Desarrollador con enfoque DevOps: automatización, contenedores y despliegue continuo." />
+<meta property="og:url" content="https://madebysergio.tech" />
+<meta property="og:image" content="https://madebysergio.tech/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap inner">
+    <a href="#top" class="name">Sergio Ortuño<span class="dot">.</span></a>
+    <div class="nav-right">
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">Sobre mí</a>
+        <a href="#skills" data-i18n="nav.skills">Stack</a>
+        <a href="#projects" data-i18n="nav.projects">Proyectos</a>
+        <a href="#experience" data-i18n="nav.experience">Trayectoria</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="lang" id="langToggle" role="group" aria-label="Idioma / Language">
+        <button type="button" class="lang-opt" data-lang="es">ES</button>
+        <button type="button" class="lang-opt" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">≡</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="status"><span class="pulse"></span><span data-i18n="hero.status">Disponible para prácticas, becas o primer empleo</span></span>
+    <h1 data-i18n-html="hero.h1">Desarrollo software y me aseguro de que <em>funcione fuera de mi portátil</em>.</h1>
+    <p class="lead" data-i18n="hero.lead">Soy Sergio. Disfruto programando, pero también con lo que viene después: dejar las cosas funcionando, automatizar lo repetitivo y poder actualizar sin cruzar los dedos. Ahora me atrae más el DevOps y mañana quizá el desarrollo; me gustan las dos.</p>
+    <div class="hero-meta">
+      <div><span class="k" data-i18n="hero.where.k">Dónde</span><span data-i18n="hero.where.v">España · trabajo en remoto</span></div>
+      <div><span class="k" data-i18n="hero.areas.k">Áreas</span><span data-i18n="hero.areas.v">Desarrollo · DevOps · Cloud · Backend</span></div>
+      <div><span class="k" data-i18n="hero.now.k">Ahora</span><span data-i18n="hero.now.v">Terminando bachillerato y cacharreando</span></div>
+    </div>
+    <div class="hero-cta">
+      <a href="#contact" class="btn primary" data-i18n="cta.contact">Escríbeme</a>
+      <a href="mailto:sergio@madebysergio.tech?subject=Solicitud%20de%20CV%20-%20Sergio%20Ortuño&body=Hola%20Sergio,%0A%0AMe%20gustaría%20ver%20tu%20CV.%20Soy%20___%20y%20te%20escribo%20por%20___.%0A%0AGracias." class="btn ghost" data-i18n="cta.cv">Pídeme el CV</a>
+      <a href="https://www.linkedin.com/in/serortgal/" target="_blank" rel="noopener" class="btn ghost">LinkedIn</a>
+    </div>
+    <div class="horizon" aria-hidden="true">
+      <span class="line"></span>
+      <svg class="plane" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g transform="rotate(90 12 12)"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></g></svg>
+      <span class="line"></span>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">01</span><h2 data-i18n="sec.about">Sobre mí</h2><span class="rule"></span></div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p data-i18n="about.p1">Llevo desde crío trasteando con ordenadores. Pasé de romper el mío a montar un homelab donde puedo cacharrear sin miedo a liarla, y así es como aprendo: construyendo. Lo que monto intento dejarlo apuntado, más que nada para no perderme yo mismo unos meses después.</p>
+        <p data-i18n="about.p2">Estoy acabando el Bachillerato Científico-Tecnológico, pero llevo un par de años metido en serio con Linux, Docker y automatización. Lo que me engancha del DevOps es la mentalidad: que algo funcione en cualquier sitio y no solo en mi máquina, enterarme de los fallos antes que el usuario y poder arreglar las cosas rápido. Aun así, programar me sigue gustando, así que prefiero no casarme con una sola etiqueta.</p>
+        <p class="note" data-i18n="about.note">Fuera de las pantallas me tira la aviación. Echo ratos en el simulador, sobre todo con el A320, y sin darme cuenta se me ha pegado su manía por las checklists y por no dejar nada al azar.</p>
+      </div>
+      <aside class="sidecard reveal">
+        <dl>
+          <div><dt data-i18n="side.edu.t">Formación</dt><dd data-i18n-html="side.edu.d">Bachillerato Científico-Tecnológico<br>IES Nit de l'Albà · 2024–2026</dd></div>
+          <div><dt data-i18n="side.lang.t">Idiomas</dt><dd data-i18n-html="side.lang.d">Español nativo<br>Inglés — Cambridge B2 First (176/190)</dd></div>
+          <div><dt data-i18n="side.off.t">Fuera de pantalla</dt><dd data-i18n="side.off.d">Homelab, automatizar lo que se deje y aviación</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="band">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="sec.skills">Stack</h2><span class="rule"></span></div>
+    <div class="skills-grid">
+      <div class="skill-col reveal">
+        <h3 data-i18n="skill.infra">Infraestructura</h3>
+        <ul>
+          <li><span>Linux</span><span class="lvl" data-i18n="lvl.daily">A diario</span></li>
+          <li><span>Docker</span><span class="lvl" data-i18n="lvl.daily">A diario</span></li>
+          <li><span>Kubernetes</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>Terraform</span><span class="lvl" data-i18n="lvl.learning">Aprendiendo</span></li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h3 data-i18n="skill.cicd">Integración y entrega</h3>
+        <ul>
+          <li><span>Git</span><span class="lvl" data-i18n="lvl.daily">A diario</span></li>
+          <li><span>GitHub Actions</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>GitLab CI</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h3 data-i18n="skill.obs">Monitorización y nube</h3>
+        <ul>
+          <li><span>Prometheus</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>Grafana</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>Cloudflare</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>AWS</span><span class="lvl" data-i18n="lvl.basic">Lo justo</span></li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h3 data-i18n="skill.code">Código</h3>
+        <ul>
+          <li><span>Bash</span><span class="lvl" data-i18n="lvl.daily">A diario</span></li>
+          <li><span>Python</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>JavaScript</span><span class="lvl" data-i18n="lvl.ok">Me defiendo</span></li>
+          <li><span>SQL</span><span class="lvl" data-i18n="lvl.basic">Lo justo</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">03</span><h2 data-i18n="sec.projects">Proyectos</h2><span class="rule"></span></div>
+    <div class="proj-list">
+      <article class="proj reveal">
+        <div class="idx">01</div>
+        <div class="body">
+          <h3>Homelab</h3>
+          <div class="meta" data-i18n="proj1.meta">2025 · infraestructura personal</div>
+          <p data-i18n="proj1.desc">Un servidor en casa donde lo tengo todo en contenedores y pruebo (y reviento) lo que voy aprendiendo. Entro desde fuera con un túnel de Cloudflare y vigilo que siga vivo con un par de paneles en Grafana.</p>
+          <div class="tags"><span>Docker</span><span>Linux</span><span>Cloudflare Tunnel</span><span>Grafana</span></div>
+        </div>
+        <a class="go" href="#" target="_blank" rel="noopener" aria-label="Ver proyecto">↗</a>
+      </article>
+      <article class="proj reveal">
+        <div class="idx">02</div>
+        <div class="body">
+          <h3 data-i18n="proj2.title">Pipeline de entrega continua</h3>
+          <div class="meta" data-i18n="proj2.meta">2025 · automatización</div>
+          <p data-i18n="proj2.desc">Cada vez que subo un commit, se construye solo, pasa los tests y publica la imagen de Docker sin que yo toque nada. Lo monté para no tener que volver a desplegar a mano.</p>
+          <div class="tags"><span>GitHub Actions</span><span>Docker</span><span>Bash</span></div>
+        </div>
+        <a class="go" href="#" target="_blank" rel="noopener" aria-label="Ver proyecto">↗</a>
+      </article>
+      <article class="proj reveal">
+        <div class="idx">03</div>
+        <div class="body">
+          <h3>madebysergio.tech</h3>
+          <div class="meta" data-i18n="proj3.meta">2026 · este sitio</div>
+          <p data-i18n="proj3.desc">Esta misma página. Sin frameworks pesados y servida por Cloudflare, así que no hay servidor que mantener y carga al instante.</p>
+          <div class="tags"><span>HTML / CSS / JS</span><span>Cloudflare Pages</span></div>
+        </div>
+        <a class="go" href="https://madebysergio.tech" target="_blank" rel="noopener" aria-label="Ver proyecto">↗</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="band">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">04</span><h2 data-i18n="sec.experience">Trayectoria</h2><span class="rule"></span></div>
+    <div class="exp reveal">
+      <div class="when" data-i18n="exp1.when">2024 — hoy</div>
+      <div>
+        <h3 data-i18n="exp1.title">Desarrollo y cacharreo por mi cuenta</h3>
+        <div class="org" data-i18n="exp1.org">Autónomo · proyectos propios</div>
+        <p data-i18n="exp1.desc">Proyectos propios, automatizaciones y el mantenimiento de mi homelab. Es donde más aprendo, casi siempre equivocándome primero y arreglándolo yo después.</p>
+      </div>
+    </div>
+    <div class="exp reveal">
+      <div class="when">2020 — 2023</div>
+      <div>
+        <h3 data-i18n="exp2.title">Hosting VPS y páginas web</h3>
+        <div class="org" data-i18n="exp2.org">Proyecto propio</div>
+        <p data-i18n="exp2.desc">Monté y llevé un pequeño servicio de hosting con VPS y páginas web. Ahí me peleé por primera vez con DNS, con la administración de servidores y con dejar funcionando herramientas como WHMCS o Grafana. Fue mi primera toma de contacto seria con los sistemas.</p>
+      </div>
+    </div>
+    <div class="exp reveal">
+      <div class="when">2024 — 2026</div>
+      <div>
+        <h3 data-i18n="exp3.title">Bachillerato Científico-Tecnológico</h3>
+        <div class="org">IES Nit de l'Albà</div>
+        <p data-i18n="exp3.desc">Base de matemáticas, física y tecnología, que es justo por donde quiero seguir: ingeniería y sistemas.</p>
+      </div>
+    </div>
+    <div class="exp reveal">
+      <div class="when" data-i18n="exp4.when">Certificación</div>
+      <div>
+        <h3>Cambridge B2 First — 176/190</h3>
+        <div class="org" data-i18n="exp4.org">Equivale a un C1</div>
+        <p data-i18n="exp4.desc">Me sirve para manejarme en inglés técnico sin pararme a pensar: leer documentación o seguir una conversación de trabajo. (Speaking 190/190, Listening 181/190.)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="num">05</span><h2 data-i18n="sec.contact">Contacto</h2><span class="rule"></span></div>
+    <div class="contact-grid reveal">
+      <div>
+        <h2 data-i18n="contact.h2">¿Hablamos?</h2>
+        <p class="lead" data-i18n="contact.lead">Si buscas a alguien con base técnica y muchas ganas de aprender, escríbeme. Leo todos los correos y contesto.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:sergio@madebysergio.tech"><span class="k">Email</span>sergio@madebysergio.tech</a>
+        <a href="https://www.linkedin.com/in/serortgal/" target="_blank" rel="noopener"><span class="k">LinkedIn</span>/in/serortgal</a>
+        <a href="https://madebysergio.tech" target="_blank" rel="noopener"><span class="k">Web</span>madebysergio.tech</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap inner">
+    <span>© <span id="year"></span> Sergio Ortuño Galvañ</span>
+    <span data-i18n="footer.made">Hecho a mano con HTML, CSS y el JavaScript justo</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

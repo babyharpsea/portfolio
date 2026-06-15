@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f5f0"/>
+  <text x="96" y="180" font-family="monospace" font-size="22" letter-spacing="6" fill="#868a90">DESARROLLO DE SOFTWARE · DEVOPS · CLOUD</text>
+  <text x="90" y="320" font-family="Georgia, serif" font-size="104" font-weight="500" fill="#191a1c">Sergio Ortuño</text>
+  <text x="96" y="392" font-family="Inter, Arial, sans-serif" font-size="30" fill="#494c51">Construyo software y me ocupo de que siga en marcha</text>
+  <line x1="96" y1="470" x2="1104" y2="470" stroke="#ddd8cd" stroke-width="1"/>
+  <line x1="96" y1="467" x2="152" y2="467" stroke="#1f4ba0" stroke-width="2"/>
+  <text x="96" y="540" font-family="monospace" font-size="24" fill="#1f4ba0">madebysergio.tech</text>
+</svg>
