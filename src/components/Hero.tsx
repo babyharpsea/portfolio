@@ -1,13 +1,5 @@
 import { useLang } from "@/i18n";
 
-// Primary CTA: ink fill that shifts to the accent blue on hover,
-// matching the site's primary button.
-const PRIMARY_CTA =
-  "min-w-0 h-auto rounded-lg gap-[.5em] px-[1.35rem] py-[0.72rem] text-[.95rem] font-medium " +
-  "bg-[#191a1c] text-[#f7f5f0] border border-[#191a1c] " +
-  "hover:bg-[#1f4ba0] hover:border-[#1f4ba0] hover:text-white " +
-  "dark:bg-[#191a1c] dark:hover:bg-[#1f4ba0] dark:text-[#f7f5f0]";
-
 export default function Hero() {
   const { t } = useLang();
   const heroHtml = { __html: t("hero.h1") };
@@ -41,9 +33,9 @@ export default function Hero() {
         <div className="hero-cta">
           <button
             type="button"
+            className="btn primary"
             onClick={goContact}
             aria-label={t("cta.contact")}
-            className={"inline-flex items-center justify-center cursor-pointer transition-colors duration-200 " + PRIMARY_CTA}
           >
             {t("cta.contact")}
           </button>
