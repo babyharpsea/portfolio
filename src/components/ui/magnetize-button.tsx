@@ -33,13 +33,15 @@ function MagnetizeButton({
   const particlesControl = useAnimation();
 
   useEffect(() => {
+    const spreadX = attractRadius;
+    const spreadY = Math.min(attractRadius, 22);
     const newParticles = Array.from({ length: particleCount }, (_, i) => ({
       id: i,
-      x: Math.random() * 360 - 180,
-      y: Math.random() * 360 - 180,
+      x: Math.random() * spreadX * 2 - spreadX,
+      y: Math.random() * spreadY * 2 - spreadY,
     }));
     setParticles(newParticles);
-  }, [particleCount]);
+  }, [particleCount, attractRadius]);
 
   const handleInteractionStart = useCallback(async () => {
     setIsAttracting(true);
