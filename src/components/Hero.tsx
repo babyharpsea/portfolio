@@ -1,9 +1,8 @@
 import { useLang } from "@/i18n";
-import { MagnetizeButton } from "@/components/ui/magnetize-button";
 
-// On-brand override for the shadcn/magnetize button: ink fill that shifts to
-// the accent blue on hover, matching the site's primary button.
-const MAGNETIC_CTA =
+// Primary CTA: ink fill that shifts to the accent blue on hover,
+// matching the site's primary button.
+const PRIMARY_CTA =
   "min-w-0 h-auto rounded-lg gap-[.5em] px-[1.35rem] py-[0.72rem] text-[.95rem] font-medium " +
   "bg-[#191a1c] text-[#f7f5f0] border border-[#191a1c] " +
   "hover:bg-[#1f4ba0] hover:border-[#1f4ba0] hover:text-white " +
@@ -40,16 +39,14 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-cta">
-          <MagnetizeButton
-            particleCount={14}
-            attractRadius={50}
+          <button
+            type="button"
             onClick={goContact}
             aria-label={t("cta.contact")}
-            className={MAGNETIC_CTA}
-            particleClassName="bg-[#1f4ba0] dark:bg-[#1f4ba0]"
+            className={"inline-flex items-center justify-center cursor-pointer transition-colors duration-200 " + PRIMARY_CTA}
           >
             {t("cta.contact")}
-          </MagnetizeButton>
+          </button>
           <a
             href="mailto:sergio@madebysergio.tech?subject=Solicitud%20de%20CV%20-%20Sergio%20Ortuño&body=Hola%20Sergio,%0A%0AMe%20gustaría%20ver%20tu%20CV.%20Soy%20___%20y%20te%20escribo%20por%20___.%0A%0AGracias."
             className="btn ghost"
