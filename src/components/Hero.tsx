@@ -1,0 +1,86 @@
+import { useLang } from "@/i18n";
+import { MagnetizeButton } from "@/components/ui/magnetize-button";
+
+// On-brand override for the shadcn/magnetize button: ink fill that shifts to
+// the accent blue on hover, matching the site's primary button.
+const MAGNETIC_CTA =
+  "min-w-0 h-auto rounded-lg gap-[.5em] px-[1.35rem] py-[0.72rem] text-[.95rem] font-medium " +
+  "bg-[#191a1c] text-[#f7f5f0] border border-[#191a1c] " +
+  "hover:bg-[#1f4ba0] hover:border-[#1f4ba0] hover:text-white " +
+  "dark:bg-[#191a1c] dark:hover:bg-[#1f4ba0] dark:text-[#f7f5f0]";
+
+export default function Hero() {
+  const { t } = useLang();
+  const heroHtml = { __html: t("hero.h1") };
+
+  const goContact = () =>
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+
+  return (
+    <header className="hero" id="top">
+      <div className="wrap">
+        <span className="status">
+          <span className="pulse" />
+          <span>{t("hero.status")}</span>
+        </span>
+        <h1 dangerouslySetInnerHTML={heroHtml} />
+        <p className="lead">{t("hero.lead")}</p>
+        <div className="hero-meta">
+          <div>
+            <span className="k">{t("hero.where.k")}</span>
+            <span>{t("hero.where.v")}</span>
+          </div>
+          <div>
+            <span className="k">{t("hero.areas.k")}</span>
+            <span>{t("hero.areas.v")}</span>
+          </div>
+          <div>
+            <span className="k">{t("hero.now.k")}</span>
+            <span>{t("hero.now.v")}</span>
+          </div>
+        </div>
+        <div className="hero-cta">
+          <MagnetizeButton
+            particleCount={14}
+            attractRadius={50}
+            onClick={goContact}
+            aria-label={t("cta.contact")}
+            className={MAGNETIC_CTA}
+            particleClassName="bg-[#1f4ba0] dark:bg-[#1f4ba0]"
+          >
+            {t("cta.contact")}
+          </MagnetizeButton>
+          <a
+            href="mailto:sergio@madebysergio.tech?subject=Solicitud%20de%20CV%20-%20Sergio%20Ortuño&body=Hola%20Sergio,%0A%0AMe%20gustaría%20ver%20tu%20CV.%20Soy%20___%20y%20te%20escribo%20por%20___.%0A%0AGracias."
+            className="btn ghost"
+          >
+            {t("cta.cv")}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/serortgal/"
+            target="_blank"
+            rel="noopener"
+            className="btn ghost"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div className="horizon" aria-hidden="true">
+          <span className="line" />
+          <svg
+            className="plane"
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            aria-hidden="true"
+          >
+            <g transform="rotate(90 12 12)">
+              <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+            </g>
+          </svg>
+          <span className="line" />
+        </div>
+      </div>
+    </header>
+  );
+}

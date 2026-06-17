@@ -1,71 +1,63 @@
-# Portfolio — Sergio Ortuño Galvañ
+# madebysergio.tech — Portfolio (React)
 
-Portfolio personal con un diseño **profesional y sobrio** (editorial, mucho aire, un solo color de acento) orientado a un objetivo profesional en **DevOps / cloud / backend**.
-Sitio estático y ligero, sin paso de build: se despliega soltando los archivos en cualquier hosting.
+Migración del portfolio de **Sergio Ortuño Galvañ** a una SPA moderna con
+React + Vite + TypeScript + Tailwind + shadcn/ui, conservando el diseño y los
+textos bilingües (ES/EN) del sitio estático original.
 
----
+Esta versión añade animaciones (framer-motion), incluido el botón magnético
+(`MagnetizeButton`) en el CTA principal del hero.
+
+> ⚠️ Esta rama (`dev`) es de desarrollo. **No** mezclar a `main` sin revisión.
+
+## Stack
+
+- **Vite 5** + **React 18** + **TypeScript 5**
+- **Tailwind CSS 3** + **shadcn/ui** (Button) + **framer-motion**
+- **lucide-react** para iconos
+- Despliegue pensado para **Cloudflare Pages**
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev      # servidor de desarrollo (http://localhost:5173)
+npm run build    # build de producción -> dist/
+npm run preview  # sirve el build localmente
+npm run typecheck
+```
+
+## Despliegue en Cloudflare Pages
+
+- **Framework preset:** Vite
+- **Build command:** `npm run build`
+- **Output directory:** `dist`
+- **Branch:** `dev` (preview) — producción sigue en `main` (sitio estático)
 
 ## Estructura
 
 ```
-portfolio/
-├─ index.html              # Página principal (todas las secciones)
-├─ favicon.svg
-├─ og-image.png            # Imagen para redes (1200×630)
-├─ og-image.svg            # Fuente vectorial de la imagen social
-├─ robots.txt
-├─ _headers                # Cabeceras de seguridad/caché (Cloudflare/Netlify)
-├─ cv.pdf                  # (REEMPLAZA) tu CV descargable
-└─ assets/
-   ├─ css/styles.css       # Design system + estilos
-   └─ js/main.js           # Nav, menú móvil y reveal sutil al hacer scroll
+index.html
+src/
+  main.tsx            # punto de entrada, monta <App/> dentro de <LangProvider/>
+  App.tsx             # layout + IntersectionObserver para reveals
+  i18n.tsx            # diccionario ES/EN + LangProvider/useLang
+  index.css           # tokens + estilos portados 1:1 del sitio original
+  lib/utils.ts        # helper cn()
+  components/
+    Nav.tsx Hero.tsx About.tsx Skills.tsx
+    Projects.tsx Experience.tsx Contact.tsx Footer.tsx
+    ui/
+      button.tsx              # shadcn Button
+      magnetize-button.tsx    # botón con partículas magnéticas
+      magnetize-button-demo.tsx
+public/
+  favicon.svg og-image.svg og-image.png robots.txt _headers cv.pdf
 ```
 
-No usa librerías externas: solo HTML, CSS y un poco de JavaScript. Tipografías de Google Fonts (Fraunces + Inter + IBM Plex Mono).
+## Notas
 
----
-
-## Qué personalizar (todo en `index.html`)
-
-1. **Sobre mí** — ajusta los párrafos a tu historia real.
-2. **Stack** — revisa las herramientas y los niveles (Avanzado / Intermedio / Básico / Aprendiendo) para que reflejen tu realidad.
-3. **Proyectos** — sustituye los ejemplos por los tuyos (título, descripción, tags y enlace).
-4. **Trayectoria** — actualiza experiencia, formación y certificaciones.
-5. **CV** — reemplaza `cv.pdf` (ahora hay un marcador) por tu CV real.
-
-Colores y tipografías viven en las variables `:root` de `assets/css/styles.css` (cambia `--accent` para otro color de acento).
-
----
-
-## Despliegue
-
-### Opción A — Cloudflare Pages (recomendada)
-Ideal porque ya usas Cloudflare como proxy y tu dominio es `madebysergio.tech`.
-
-1. Sube esta carpeta a un repositorio de GitHub.
-2. Cloudflare → **Workers & Pages → Create → Pages → Connect to Git** y elige el repo.
-3. Build: **Framework preset** `None`, **Build command** vacío, **Output directory** `/`.
-4. Deploy → obtienes una URL `*.pages.dev`.
-5. **Custom domains** → añade `madebysergio.tech` (y `www`). Como el DNS ya está en Cloudflare, el SSL se configura solo.
-
-### Opción B — GitHub Pages
-1. Sube la carpeta a un repo.
-2. **Settings → Pages → Source: Deploy from a branch →** `main` / root.
-3. (Opcional) **Custom domain:** `madebysergio.tech` + registro CNAME en Cloudflare.
-
-### Opción C — VPS + Nginx
-```nginx
-server {
-    listen 80;
-    server_name madebysergio.tech;
-    root /var/www/portfolio;
-    index index.html;
-    location / { try_files $uri $uri/ =404; }
-}
-```
-
-> Para previsualizar en local sin instalar nada: `python3 -m http.server 8080` y abre `http://localhost:8080`.
-
----
-
-© Sergio Ortuño Galvañ.
+- El botón magnético se usa **solo** en el CTA principal del hero, re-tematizado
+  a los colores de marca (tinta → azul acento). El resto de botones se mantienen
+  como enlaces `.btn ghost`.
+- Los binarios `og-image.png` y `cv.pdf` viven en `public/`.
+- El idioma se detecta del navegador y se guarda en `localStorage`.
