@@ -1,4 +1,7 @@
 import { useLang } from "@/i18n";
+import type { CSSProperties } from "react";
+import { TECH_ICONS } from "./techIcons";
+import "./skills-icons.css";
 
 type Skill = { name: string; lvl: string };
 type Col = { titleKey: string; items: Skill[] };
@@ -56,12 +59,27 @@ export default function Skills() {
             <div className="skill-col reveal" key={col.titleKey}>
               <h3>{t(col.titleKey)}</h3>
               <ul>
-                {col.items.map((s) => (
-                  <li key={s.name}>
-                    <span>{s.name}</span>
-                    <span className="lvl">{t(s.lvl)}</span>
-                  </li>
-                ))}
+                {col.items.map((s) => {
+                  const ic = TECH_ICONS[s.name];
+                  const icoStyle = ic
+                    ? ({ "--brand": ic.color } as CSSProperties)
+                    : undefined;
+                  return (
+                    <li key={s.name}>
+                      <span className="tech">
+                        {ic ? (
+                          <span className="ico" style={icoStyle}>
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                              <path d={ic.d} />
+                            </svg>
+                          </span>
+                        ) : null}
+                        <span>{s.name}</span>
+                      </span>
+                      <span className="lvl">{t(s.lvl)}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
