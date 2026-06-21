@@ -10,10 +10,6 @@ export default function Hero() {
   return (
     <header className="hero" id="top">
       <div className="wrap">
-        <span className="status">
-          <span className="pulse" />
-          <span>{t("hero.status")}</span>
-        </span>
         <h1 dangerouslySetInnerHTML={heroHtml} />
         <p className="lead">{t("hero.lead")}</p>
         <div className="hero-meta">
