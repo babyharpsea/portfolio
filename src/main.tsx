@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { LangProvider } from "./i18n";
+import { ThemeProvider } from "./theme";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <LangProvider>
-      <App />
-    </LangProvider>
+    <ThemeProvider>
+      <LangProvider>
+        <App />
+      </LangProvider>
+    </ThemeProvider>
   </React.StrictMode>,
 );
