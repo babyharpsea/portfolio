@@ -18,26 +18,26 @@ export const I18N: Record<Lang, Dict> = {
     "nav.projects": "Proyectos",
     "nav.experience": "Trayectoria",
     "nav.contact": "Contacto",
-    "hero.status": "Disponible para prácticas, becas o primer empleo",
+    "hero.status": "Disponible para prácticas, becas o un primer empleo",
     "hero.h1":
       "Desarrollo software y me aseguro de que <em>funcione fuera de mi portátil</em>.",
     "hero.lead":
-      "Soy Sergio. Disfruto programando, pero también con lo que viene después: dejar las cosas funcionando, automatizar lo repetitivo y poder actualizar sin cruzar los dedos. Ahora me atrae más el DevOps y mañana quizá el desarrollo; me gustan las dos.",
+      "Soy Sergio. Me gusta programar, pero también lo que viene después: dejar las cosas funcionando, automatizar lo repetitivo y poder actualizar sin cruzar los dedos. Hoy me tira más el DevOps y mañana quizá el desarrollo; me quedo con las dos.",
     "hero.where.k": "Dónde",
     "hero.where.v": "España · trabajo en remoto",
     "hero.areas.k": "Áreas",
     "hero.areas.v": "Desarrollo · DevOps · Cloud · Backend",
     "hero.now.k": "Ahora",
-    "hero.now.v": "Terminando bachillerato y cacharreando",
+    "hero.now.v": "Terminando bachillerato y cacharreando en el homelab",
     "cta.contact": "Escríbeme",
     "cta.cv": "Pídeme el CV",
     "sec.about": "Sobre mí",
     "about.p1":
-      "Llevo desde crío trasteando con ordenadores. Pasé de romper el mío a montar un homelab donde puedo cacharrear sin miedo a liarla, y así es como aprendo: construyendo. Lo que monto intento dejarlo apuntado, más que nada para no perderme yo mismo unos meses después.",
+      "Llevo desde crío trasteando con ordenadores. Pasé de romper el mío a montar un homelab donde puedo cacharrear sin miedo a liarla, y así es como mejor aprendo: construyendo y rompiendo cosas. Lo que monto intento dejarlo documentado, sobre todo para no perderme yo mismo unos meses después.",
     "about.p2":
-      "Estoy acabando el Bachillerato Científico-Tecnológico, pero llevo un par de años metido en serio con Linux, Docker y automatización. Lo que me engancha del DevOps es la mentalidad: que algo funcione en cualquier sitio y no solo en mi máquina, enterarme de los fallos antes que el usuario y poder arreglar las cosas rápido. Aun así, programar me sigue gustando, así que prefiero no casarme con una sola etiqueta.",
+      "Estoy acabando el Bachillerato Científico-Tecnológico, pero llevo un par de años metido en serio con Linux, Docker y automatización. Del DevOps me engancha la mentalidad: que algo funcione en cualquier sitio y no solo en mi máquina, enterarme de los fallos antes que el usuario y poder arreglarlos rápido. Aun así, programar me sigue gustando, así que prefiero no casarme con una sola etiqueta.",
     "about.note":
-      "Fuera de las pantallas me tira la aviación. Echo ratos en el simulador, sobre todo con el A320, y sin darme cuenta se me ha pegado su manía por las checklists y por no dejar nada al azar.",
+      "Fuera de las pantallas me tira la aviación. Echo ratos en el simulador, sobre todo con el A320, y casi sin darme cuenta se me ha pegado su manía por las checklists y por no dejar nada al azar.",
     "side.edu.t": "Formación",
     "side.edu.d":
       "Bachillerato Científico-Tecnológico<br>IES Nit de l'Albà · 2024–2026",
@@ -61,10 +61,10 @@ export const I18N: Record<Lang, Dict> = {
     "proj2.title": "Pipeline de entrega continua",
     "proj2.meta": "2025 · automatización",
     "proj2.desc":
-      "Cada vez que subo un commit, se construye solo, pasa los tests y publica la imagen de Docker sin que yo toque nada. Lo monté para no tener que volver a desplegar a mano.",
+      "Cada vez que subo un commit se construye solo, pasa los tests y publica la imagen de Docker sin que yo toque nada. Lo monté para no volver a desplegar a mano.",
     "proj3.meta": "2026 · este sitio",
     "proj3.desc":
-      "Esta misma página. Sin frameworks pesados y servida por Cloudflare, así que no hay servidor que mantener y carga al instante.",
+      "Esta misma página: una single-page en React y Vite, desplegada en el edge de Cloudflare. Sin servidor que mantener y carga al instante.",
     "sec.experience": "Trayectoria",
     "exp1.when": "2024 — hoy",
     "exp1.title": "Desarrollo y cacharreo por mi cuenta",
@@ -86,7 +86,7 @@ export const I18N: Record<Lang, Dict> = {
     "contact.h2": "¿Hablamos?",
     "contact.lead":
       "Si buscas a alguien con base técnica y muchas ganas de aprender, escríbeme. Leo todos los correos y contesto.",
-    "footer.made": "Hecho a mano con HTML, CSS y el JavaScript justo",
+    "footer.made": "Hecha por mí con React, Vite y Tailwind · desplegada en Cloudflare",
   },
   en: {
     "meta.title": "Sergio Ortuño Galvañ — Software development & DevOps",
@@ -99,22 +99,22 @@ export const I18N: Record<Lang, Dict> = {
     "hero.h1":
       "I build software and make sure it <em>runs beyond my laptop</em>.",
     "hero.lead":
-      "I'm Sergio. I enjoy programming, but also everything that comes after: keeping things running, automating the repetitive parts and being able to ship updates without crossing my fingers. Right now I'm drawn more to DevOps and tomorrow maybe to development; I like them both.",
+      "I'm Sergio. I enjoy programming, but also everything that comes after: keeping things running, automating the repetitive parts and shipping updates without crossing my fingers. Right now I'm drawn more to DevOps and tomorrow maybe to development; I'll keep both.",
     "hero.where.k": "Where",
     "hero.where.v": "Spain · remote-friendly",
     "hero.areas.k": "Areas",
     "hero.areas.v": "Development · DevOps · Cloud · Backend",
     "hero.now.k": "Now",
-    "hero.now.v": "Finishing high school and tinkering",
+    "hero.now.v": "Finishing high school and tinkering in my homelab",
     "cta.contact": "Get in touch",
     "cta.cv": "Ask me for my CV",
     "sec.about": "About",
     "about.p1":
-      "I've been messing around with computers since I was a kid. I went from breaking my own machine to running a homelab where I can tinker without fear of breaking anything important, and that's how I learn: by building. I try to write down whatever I set up, mostly so I don't get lost myself a few months later.",
+      "I've been messing around with computers since I was a kid. I went from breaking my own machine to running a homelab where I can tinker without fear of breaking anything important, and that's how I learn best: by building things and breaking them. I try to document whatever I set up, mostly so I don't get lost myself a few months later.",
     "about.p2":
-      "I'm finishing my Science & Technology Baccalaureate, but I've spent a couple of years getting serious with Linux, Docker and automation. What hooks me about DevOps is the mindset: making something work anywhere and not just on my machine, finding out about failures before the user does, and being able to fix things fast. Even so, I still enjoy programming, so I'd rather not box myself into a single label.",
+      "I'm finishing my Science & Technology Baccalaureate, but I've spent a couple of years getting serious with Linux, Docker and automation. What hooks me about DevOps is the mindset: making something work anywhere and not just on my machine, hearing about failures before the user does, and being able to fix them fast. Even so, I still enjoy programming, so I'd rather not box myself into a single label.",
     "about.note":
-      "Away from screens I'm into aviation. I spend time in the simulator, mostly with the A320, and without realizing it I've picked up its obsession with checklists and leaving nothing to chance.",
+      "Away from screens I'm into aviation. I spend time in the simulator, mostly with the A320, and almost without noticing I've picked up its obsession with checklists and leaving nothing to chance.",
     "side.edu.t": "Education",
     "side.edu.d":
       "Science & Technology Baccalaureate<br>IES Nit de l'Albà · 2024–2026",
@@ -138,10 +138,10 @@ export const I18N: Record<Lang, Dict> = {
     "proj2.title": "Continuous delivery pipeline",
     "proj2.meta": "2025 · automation",
     "proj2.desc":
-      "Every time I push a commit it builds itself, runs the tests and publishes the Docker image without me touching anything. I set it up so I'd never have to deploy by hand again.",
+      "Every time I push a commit it builds itself, runs the tests and publishes the Docker image without me touching anything. I set it up so I'd never deploy by hand again.",
     "proj3.meta": "2026 · this site",
     "proj3.desc":
-      "This very page. No heavy frameworks and served by Cloudflare, so there's no server to maintain and it loads instantly.",
+      "This very page: a single-page app in React and Vite, deployed on Cloudflare's edge. No server to maintain and it loads instantly.",
     "sec.experience": "Experience",
     "exp1.when": "2024 — present",
     "exp1.title": "Building and tinkering on my own",
@@ -163,7 +163,7 @@ export const I18N: Record<Lang, Dict> = {
     "contact.h2": "Let's talk",
     "contact.lead":
       "If you're looking for someone with a technical base and a real drive to learn, drop me a line. I read every email and I reply.",
-    "footer.made": "Handmade with HTML, CSS and just enough JavaScript",
+    "footer.made": "Built by me with React, Vite and Tailwind · deployed on Cloudflare",
   },
 };
 
