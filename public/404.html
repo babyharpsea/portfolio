@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>404 — Fuera de ruta · Sergio Ortuño Galvañ</title>
+<meta name="description" content="Página no encontrada." />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#ffffff;--paper-2:#f6f7f9;--ink:#16181d;--ink-2:#474d56;--ink-3:#878d97;
+    --line:#e8eaed;--line-2:#d7dbe0;--accent:#2f4a73;--accent-2:#22395c;
+    --sans:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --serif:"Fraunces",Georgia,serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;display:flex;align-items:center;justify-content:center;
+    padding:2rem;line-height:1.5;
+  }
+  .wrap{max-width:560px;width:100%;text-align:center}
+  .badge{
+    display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);
+    font-size:.78rem;letter-spacing:.04em;color:var(--ink-3);
+    border:1px solid var(--line);border-radius:999px;padding:.35rem .7rem;margin-bottom:1.6rem;
+  }
+  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .code{
+    font-family:var(--serif);font-weight:600;font-size:clamp(4.5rem,18vw,8rem);
+    line-height:.9;letter-spacing:-.02em;margin:0;color:var(--ink);
+  }
+  h1{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin:.9rem 0 .4rem}
+  p{margin:0 auto 1.6rem;max-width:42ch;color:var(--ink-2)}
+  .plane{display:block;margin:1.4rem auto;width:54px;height:54px;color:var(--line-2)}
+  .plane svg{width:100%;height:100%;fill:currentColor}
+  .actions{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:500;
+    font-size:.92rem;text-decoration:none;padding:.6rem 1.1rem;border-radius:.5rem;
+    border:1px solid var(--line-2);transition:all .18s ease;
+  }
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn.primary:hover{background:var(--accent);border-color:var(--accent)}
+  .btn.ghost{background:transparent;color:var(--ink-2)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .en{margin-top:1.6rem;font-size:.82rem;color:var(--ink-3)}
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <span class="badge"><span class="dot"></span>error 404</span>
+    <p class="code">404</p>
+    <span class="plane" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><g transform="rotate(90 12 12)"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></g></svg>
+    </span>
+    <h1>Te has salido de la ruta</h1>
+    <p>Esta página no existe o se ha movido. Volvamos a terreno conocido.</p>
+    <div class="actions">
+      <a class="btn primary" href="/">Volver al inicio</a>
+      <a class="btn ghost" href="mailto:sergio@madebysergio.tech">Contacto</a>
+    </div>
+    <p class="en">Page not found — let's get you back on course.</p>
+  </main>
+</body>
+</html>
