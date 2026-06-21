@@ -86,7 +86,7 @@ export const I18N: Record<Lang, Dict> = {
     "contact.h2": "¿Hablamos?",
     "contact.lead":
       "Si buscas a alguien con base técnica y muchas ganas de aprender, escríbeme. Leo todos los correos y contesto.",
-    "footer.made": "Hecha por mí con React, Vite y Tailwind · desplegada en Cloudflare",
+    "footer.made": "Hecha por mí con ayuda de la IA, con React, Vite y Tailwind · desplegada en Cloudflare",
   },
   en: {
     "meta.title": "Sergio Ortuño Galvañ — Software development & DevOps",
@@ -163,7 +163,7 @@ export const I18N: Record<Lang, Dict> = {
     "contact.h2": "Let's talk",
     "contact.lead":
       "If you're looking for someone with a technical base and a real drive to learn, drop me a line. I read every email and I reply.",
-    "footer.made": "Built by me with React, Vite and Tailwind · deployed on Cloudflare",
+    "footer.made": "Built by me with the help of AI, using React, Vite and Tailwind · deployed on Cloudflare",
   },
 };
 
