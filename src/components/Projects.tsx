@@ -14,7 +14,7 @@ export default function Projects() {
           <article className="proj reveal">
             <div className="idx">01</div>
             <div className="body">
-              <h3>Homelab</h3>
+              <h3>{t("proj1.title")}</h3>
               <div className="meta">{t("proj1.meta")}</div>
               <p>{t("proj1.desc")}</p>
               <div className="tags">
