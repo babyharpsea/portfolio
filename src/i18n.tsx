@@ -39,8 +39,7 @@ export const I18N: Record<Lang, Dict> = {
     "about.note":
       "Fuera del ámbito tecnológico, me interesa la aviación y la simulación de vuelo. La disciplina de los procedimientos y las listas de comprobación es una perspectiva que aplico también a mi trabajo técnico.",
     "side.edu.t": "Formación",
-    "side.edu.d":
-      "Bachillerato Científico-Tecnológico<br>IES Nit de l'Albà · 2024–2026",
+    "side.edu.d": "Bachillerato Científico-Tecnológico · 2024–2026",
     "side.lang.t": "Idiomas",
     "side.lang.d": "Español nativo<br>Inglés — Cambridge B2 First (176/190)",
     "side.off.t": "Fuera de pantalla",
@@ -117,8 +116,7 @@ export const I18N: Record<Lang, Dict> = {
     "about.note":
       "Outside technology, I am interested in aviation and flight simulation. The discipline of procedures and checklists is a perspective I also bring to technical work.",
     "side.edu.t": "Education",
-    "side.edu.d":
-      "Science & Technology Baccalaureate<br>IES Nit de l'Albà · 2024–2026",
+    "side.edu.d": "Science & Technology Baccalaureate · 2024–2026",
     "side.lang.t": "Languages",
     "side.lang.d": "Native Spanish<br>English — Cambridge B2 First (176/190)",
     "side.off.t": "Off-screen",
