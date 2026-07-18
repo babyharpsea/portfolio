@@ -33,7 +33,7 @@ export const I18N: Record<Lang, Dict> = {
     "cta.cv": "Pídeme el CV",
     "sec.about": "Sobre mí",
     "about.p1":
-      "Me interesan la tecnología y los sistemas desde una edad temprana. Ese interés me llevó a crear un homelab en el que experimento con infraestructura, servicios y automatizaciones. Aprendo construyendo y documento los entornos que configuro para que resulten reproducibles y fáciles de mantener.",
+      "Me interesan la tecnología y los sistemas desde una edad temprana. Ese interés me llevó a crear y administrar un entorno en la nube en el que experimento con infraestructura, servicios y automatizaciones. Aprendo construyendo y documento los entornos que configuro para que resulten reproducibles y fáciles de mantener.",
     "about.p2":
       "Durante los últimos años he profundizado en Linux, Docker y automatización. Me atrae especialmente el enfoque DevOps: diseñar sistemas reproducibles, detectar incidencias de forma proactiva y mejorar continuamente los procesos de entrega. También disfruto del desarrollo de software, por lo que mantengo una visión amplia entre desarrollo y operaciones.",
     "about.note":
@@ -44,7 +44,7 @@ export const I18N: Record<Lang, Dict> = {
     "side.lang.t": "Idiomas",
     "side.lang.d": "Español nativo<br>Inglés — Cambridge B2 First (176/190)",
     "side.off.t": "Fuera de pantalla",
-    "side.off.d": "Homelab, automatización y aviación",
+    "side.off.d": "Servidor en la nube, automatización y aviación",
     "sec.skills": "Stack",
     "skill.infra": "Infraestructura",
     "skill.cicd": "Integración y entrega",
@@ -55,9 +55,10 @@ export const I18N: Record<Lang, Dict> = {
     "lvl.learning": "Aprendiendo",
     "lvl.basic": "Lo justo",
     "sec.projects": "Proyectos",
+    "proj1.title": "Infraestructura en la nube",
     "proj1.meta": "2025 · infraestructura personal",
     "proj1.desc":
-      "Infraestructura personal basada en contenedores para experimentar con servicios y herramientas. Incluye acceso remoto mediante Cloudflare Tunnel y monitorización con paneles de Grafana.",
+      "Infraestructura en la nube basada en contenedores para experimentar con servicios y herramientas. Incluye acceso remoto mediante Cloudflare Tunnel y monitorización con paneles de Grafana.",
     "proj2.title": "Pipeline de entrega continua",
     "proj2.meta": "2025 · automatización",
     "proj2.desc":
@@ -70,7 +71,7 @@ export const I18N: Record<Lang, Dict> = {
     "exp1.title": "Desarrollo y sistemas en proyectos propios",
     "exp1.org": "Proyectos personales",
     "exp1.desc":
-      "Desarrollo de proyectos propios, automatizaciones y administración de un homelab. Estos proyectos me permiten aplicar de forma práctica conceptos de infraestructura, despliegue y monitorización.",
+      "Desarrollo de proyectos propios, automatizaciones y administración de infraestructura en la nube. Estos proyectos me permiten aplicar de forma práctica conceptos de infraestructura, despliegue y monitorización.",
     "exp2.title": "Hosting VPS y páginas web",
     "exp2.org": "Proyecto propio",
     "exp2.desc":
@@ -110,7 +111,7 @@ export const I18N: Record<Lang, Dict> = {
     "cta.cv": "Ask me for my CV",
     "sec.about": "About",
     "about.p1":
-      "I have been interested in technology and systems from an early age. That interest led me to build a homelab where I experiment with infrastructure, services and automation. I learn by building and document the environments I configure to keep them reproducible and maintainable.",
+      "I have been interested in technology and systems from an early age. That interest led me to build and manage a cloud environment where I experiment with infrastructure, services and automation. I learn by building and document the environments I configure to keep them reproducible and maintainable.",
     "about.p2":
       "Over the past few years, I have focused on Linux, Docker and automation. I am particularly drawn to the DevOps approach: designing reproducible systems, detecting incidents proactively and continuously improving delivery processes. I also enjoy software development, which gives me a broad perspective across development and operations.",
     "about.note":
@@ -121,7 +122,7 @@ export const I18N: Record<Lang, Dict> = {
     "side.lang.t": "Languages",
     "side.lang.d": "Native Spanish<br>English — Cambridge B2 First (176/190)",
     "side.off.t": "Off-screen",
-    "side.off.d": "Homelab, automation and aviation",
+    "side.off.d": "Cloud server, automation and aviation",
     "sec.skills": "Stack",
     "skill.infra": "Infrastructure",
     "skill.cicd": "Integration & delivery",
@@ -132,9 +133,10 @@ export const I18N: Record<Lang, Dict> = {
     "lvl.learning": "Learning",
     "lvl.basic": "Basics",
     "sec.projects": "Projects",
+    "proj1.title": "Cloud infrastructure",
     "proj1.meta": "2025 · personal infrastructure",
     "proj1.desc":
-      "Personal container-based infrastructure used to experiment with services and tools. It includes remote access through Cloudflare Tunnel and monitoring with Grafana dashboards.",
+      "Cloud-based infrastructure used to experiment with services and tools. It includes remote access through Cloudflare Tunnel and monitoring with Grafana dashboards.",
     "proj2.title": "Continuous delivery pipeline",
     "proj2.meta": "2025 · automation",
     "proj2.desc":
@@ -147,7 +149,7 @@ export const I18N: Record<Lang, Dict> = {
     "exp1.title": "Development and systems in personal projects",
     "exp1.org": "Personal projects",
     "exp1.desc":
-      "Development of personal projects, automations and homelab administration. These projects let me apply infrastructure, deployment and monitoring concepts in a practical setting.",
+      "Development of personal projects, automations and cloud infrastructure administration. These projects let me apply infrastructure, deployment and monitoring concepts in a practical setting.",
     "exp2.title": "VPS hosting and websites",
     "exp2.org": "Own venture",
     "exp2.desc":
