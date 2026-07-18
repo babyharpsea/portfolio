@@ -30,7 +30,6 @@ export default function Experience() {
           <div className="when">2024 — 2026</div>
           <div>
             <h3>{t("exp3.title")}</h3>
-            <div className="org">IES Nit de l'Albà</div>
             <p>{t("exp3.desc")}</p>
           </div>
         </div>
